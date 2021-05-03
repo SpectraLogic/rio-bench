@@ -23,6 +23,7 @@ repositories {
     jcenter()
     mavenLocal()
     mavenCentral()
+    maven("https://jitpack.io")
 }
 
 dependencies {
@@ -36,7 +37,7 @@ dependencies {
     compile("org.jetbrains.kotlin:kotlin-reflect:1.3.31")
     implementation("com.github.ajalt:clikt:$cliktVersion")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlinCoroutinesVersion")
-    implementation("com.spectralogic.retrofitutils:retrofit-utils:1.0.6-dev")
+    implementation("com.github.spectralogic:retrofit-utils:dev")
 
     testImplementation("org.jetbrains.kotlin:kotlin-test")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
