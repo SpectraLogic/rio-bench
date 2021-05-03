@@ -23,12 +23,7 @@ repositories {
     jcenter()
     mavenLocal()
     mavenCentral()
-}
-
-allprojects {
-    repositories {
-        maven("https://jitpack.io")
-    }
+    maven("https://jitpack.io")
 }
 
 dependencies {
