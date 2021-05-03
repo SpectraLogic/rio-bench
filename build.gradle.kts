@@ -25,6 +25,12 @@ repositories {
     mavenCentral()
 }
 
+allprojects {
+    repositories {
+        maven("https://jitpack.io")
+    }
+}
+
 dependencies {
     val cliktVersion = "2.0.0"
     val mockkVersion = "1.9.3"
@@ -36,7 +42,7 @@ dependencies {
     compile("org.jetbrains.kotlin:kotlin-reflect:1.3.31")
     implementation("com.github.ajalt:clikt:$cliktVersion")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlinCoroutinesVersion")
-    implementation("com.spectralogic.retrofitutils:retrofit-utils:1.0.6-dev")
+    implementation("com.github.spectralogic:retrofit-utils:dev")
 
     testImplementation("org.jetbrains.kotlin:kotlin-test")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
